@@ -64,19 +64,19 @@ input {
 }
 
 .slide-1 {
-  background-color: magenta;
+  background-image: url("assets/meme1.jpg");
 }
 
 .slide-2 {
-  background-color: orange;
+  background-image: url("assets/meme2.jpg");
 }
 
 .slide-3 {
-  background-color: purple;
+  background-image: url("assets/meme3.gif");
 }
 
 .slide-4 {
-  background-color: yellow;
+  background-image: url("assets/meme4.jpg");
 }
 
 #slide1:checked ~ .slider__slides-wrapper {
