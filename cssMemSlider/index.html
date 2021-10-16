@@ -5,9 +5,43 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <title>Meme CSS Slider</title>
 </head>
 <body>
-  
+  <div class="slider">
+    <input type="radio" name="pagination" id="slide1" checked>
+    <input type="radio" name="pagination" id="slide2">
+    <input type="radio" name="pagination" id="slide3">
+    <input type="radio" name="pagination" id="slide4">
+    <div class="slider__slides-wrapper">
+      <div class="slide slide-1"></div>
+      <div class="slide slide-2"></div>
+      <div class="slide slide-3"></div>
+      <div class="slide slide-4"></div>
+    </div>
+    <div class="slider__text-wrapper">
+      <div class="text text-1">Meme text 1</div>
+      <div class="text text-2">Meme text 2 that is veryveryvery and veryveryvery long with some very-very-very-very-very-very long words</div>
+      <div class="text text-3">Mexm text 3</div>
+      <div class="text text-4">Just really hilarious meme text that will make you cry LOL</div>
+    </div>
+    <div class="slider__pagination-wrapper">
+      <label class="pagination pagination-1" for="slide1">
+        <span class="pagination-dot"></span>
+      </label>
+      <label class="pagination pagination-2" for="slide2">
+        <span class="pagination-dot"></span>
+      </label>
+      <label class="pagination pagination-3" for="slide3">
+        <span class="pagination-dot"></span>
+      </label>
+      <label class="pagination pagination-4" for="slide4">
+        <span class="pagination-dot"></span>
+      </label>
+    </div>
+    </div>
 </body>
 </html>
