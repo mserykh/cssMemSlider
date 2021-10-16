@@ -145,9 +145,19 @@ span {
   transition: border 0.4s ease-in-out;
 }
 
+#slide1:checked ~ .slider__pagination-wrapper > .pagination-1:hover span {
+  border-color: #ececd7;
+  transition: border 0.4s ease-in-out;
+}
+
 #slide2:checked ~ .slider__pagination-wrapper > .pagination-2 > span {
   background-color: transparent;
   border: 2px solid #749cec;
+  transition: border 0.4s ease-in-out;
+}
+
+#slide2:checked ~ .slider__pagination-wrapper > .pagination-2:hover span {
+  border-color: #ececd7;
   transition: border 0.4s ease-in-out;
 }
 
@@ -157,8 +167,18 @@ span {
   transition: border 0.4s ease-in-out;
 }
 
+#slide3:checked ~ .slider__pagination-wrapper > .pagination-3:hover span {
+  border-color: #ececd7;
+  transition: border 0.4s ease-in-out;
+}
+
 #slide4:checked ~ .slider__pagination-wrapper > .pagination-4 > span {
   background-color: transparent;
   border: 2px solid #749cec;
+  transition: border 0.4s ease-in-out;
+}
+
+#slide4:checked ~ .slider__pagination-wrapper > .pagination-4:hover span {
+  border-color: #ececd7;
   transition: border 0.4s ease-in-out;
 }
