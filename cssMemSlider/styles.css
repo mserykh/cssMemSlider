@@ -130,12 +130,12 @@ input {
   cursor: pointer;
 }
 
-.pagination:hover span {
+.pagination:hover .pagination-dot {
   background-color: #ececd7;
   transition: background 0.4s ease-in-out;
 }
 
-span {
+.pagination-dot {
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
@@ -143,35 +143,35 @@ span {
   transition: background 0.4s ease-in-out;
 }
 
-#slide1:checked ~ .slider__pagination-wrapper > .pagination-1 > span {
+#slide1:checked ~ .slider__pagination-wrapper > .pagination-1 > .pagination-dot {
   background-color: transparent;
   border: 2px solid #749cec;
   transition: border 0.4s ease-in-out;
 }
 
-#slide1:checked ~ .slider__pagination-wrapper > .pagination-1:hover span {
+#slide1:checked ~ .slider__pagination-wrapper > .pagination-1:hover .pagination-dot {
   border-color: #ececd7;
   transition: border 0.4s ease-in-out;
 }
 
-#slide2:checked ~ .slider__pagination-wrapper > .pagination-2 > span {
+#slide2:checked ~ .slider__pagination-wrapper > .pagination-2 > .pagination-dot {
   background-color: transparent;
   border: 2px solid #749cec;
   transition: border 0.4s ease-in-out;
 }
 
-#slide2:checked ~ .slider__pagination-wrapper > .pagination-2:hover span {
+#slide2:checked ~ .slider__pagination-wrapper > .pagination-2:hover .pagination-dot {
   border-color: #ececd7;
   transition: border 0.4s ease-in-out;
 }
 
-#slide3:checked ~ .slider__pagination-wrapper > .pagination-3 > span{
+#slide3:checked ~ .slider__pagination-wrapper > .pagination-3 > .pagination-dot {
   background-color: transparent;
   border: 2px solid #749cec;
   transition: border 0.4s ease-in-out;
 }
 
-#slide3:checked ~ .slider__pagination-wrapper > .pagination-3:hover span {
+#slide3:checked ~ .slider__pagination-wrapper > .pagination-3:hover .pagination-dot {
   border-color: #ececd7;
   transition: border 0.4s ease-in-out;
 }
