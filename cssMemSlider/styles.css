@@ -44,7 +44,7 @@ body {
   display: flex;
   width: calc(var(--basic-with) * 4);
   height: 50vh;
-  transition: transform 0.5s ease 0.2s;
+  transition: transform 0.4s ease 0.2s;
 }
 
 @media screen and (max-width: 500px) {
@@ -58,7 +58,10 @@ body {
   grid-row: 2 / 3;
   grid-column: 1 / 2;
   align-self: start;
+  width: calc(var(--basic-with) * 4);
   color: #ececd7;
+  transform: translateX(calc(var(--basic-with) * -4));
+  transition: transform 0.4s ease-in-out;
 }
 
 .slider__pagination-wrapper {
@@ -68,6 +71,7 @@ body {
   justify-content: flex-end;
   align-self: start;
   width: 100%;
+  z-index: 2;
 }
 
 @media screen and (max-width: 768px) {
@@ -118,23 +122,28 @@ input {
 
 #slide1:checked ~ .slider__slides-wrapper {
   transform: translateX(0);
+  transition: transform 0.4s ease-in-out;
 }
 
 #slide2:checked ~ .slider__slides-wrapper {
   transform: translateX(-25%);
+  transition: transform 0.4s ease-in-out;
 }
 
 #slide3:checked ~ .slider__slides-wrapper {
   transform: translateX(-50%);
+  transition: transform 0.4s ease-in-out;
 }
 
 #slide4:checked ~ .slider__slides-wrapper {
   transform: translateX(-75%);
+  transition: transform 0.4s ease-in-out;
 }
 
 .slider__text-wrapper .text {
-  display: none;
+  width: 100%;
   font-size: 1.2rem;
+  transition: transform 0.4s ease-in-out;
 }
 
 @media screen and (max-width: 360px) {
@@ -143,20 +152,24 @@ input {
   }
 }
 
-#slide1:checked ~ .slider__text-wrapper > .text-1 {
-  display: flex;
+#slide1:checked ~ .slider__text-wrapper {
+  transform: translateX(0);
+  transition: transform 0.4s ease-in-out;
 }
 
-#slide2:checked ~ .slider__text-wrapper > .text-2 {
-  display: flex;
+#slide2:checked ~ .slider__text-wrapper {
+  transform: translateX(-25%);
+  transition: transform 0.4s ease-in-out;
 }
 
-#slide3:checked ~ .slider__text-wrapper > .text-3 {
-  display: flex;
+#slide3:checked ~ .slider__text-wrapper {
+  transform: translateX(-50%);
+  transition: transform 0.4s ease-in-out;
 }
 
-#slide4:checked ~ .slider__text-wrapper > .text-4 {
-  display: flex;
+#slide4:checked ~ .slider__text-wrapper {
+  transform: translateX(-75%);
+  transition: transform 0.4s ease-in-out;
 }
 
 .pagination {
