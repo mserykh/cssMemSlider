@@ -20,7 +20,7 @@ body {
 .slider {
   display: grid;
   grid-template-columns: 80% 20%;
-  grid-template-rows: auto max-content;
+  grid-template-rows: auto 10vh;
   row-gap: 1rem;
   margin: 0 auto;
   width: 70vw;
@@ -48,13 +48,13 @@ body {
   display: flex;
   grid-row: 2 / 3;
   grid-column: 2 / 3;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-self: start;
+  width: 100%;
 }
 
 input {
   display: none;
-
 }
 
 .slide {
@@ -89,21 +89,20 @@ input {
 }
 
 #slide2:checked ~ .slider__slides-wrapper {
-  transform: translateX(-70vw);
+  transform: translateX(-25%);
 }
 
 #slide3:checked ~ .slider__slides-wrapper {
-  transform: translateX(-140vw);
+  transform: translateX(-50%);
 }
 
 #slide4:checked ~ .slider__slides-wrapper {
-  transform: translateX(-210vw);
+  transform: translateX(-75%);
 }
 
 .slider__text-wrapper .text {
   display: none;
-  padding: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 #slide1:checked ~ .slider__text-wrapper > .text-1 {
